@@ -60,13 +60,13 @@ const Navbar = () => {
         <div className="flex items-center space-x-4 text-2xl">
           <a
             className="hover:text-blue-500 text-blue-400 hover:scale-110 transition-transform duration-300"
-            href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"
+            href="https://www.linkedin.com/in/vladyslav-nazarchuk/"
           >
             <FaLinkedin />
           </a>
           <a
             className="hover:text-gray-500 hover:scale-110 transition-transform duration-300"
-            href="https://github.com/Adityatitu01"
+            href="https://github.com/VladyslavNz"
           >
             <FaGithub />
           </a>
@@ -116,13 +116,13 @@ const Navbar = () => {
           <div className="flex items-center space-x-4 text-2xl">
             <a
               className="hover:text-blue-500 hover:scale-110 transition-transform duration-300"
-              href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"
+              href="https://www.linkedin.com/in/vladyslav-nazarchuk/"
             >
               <FaLinkedin />
             </a>
             <a
               className="hover:text-gray-500 hover:scale-110 transition-transform duration-300"
-              href="https://github.com/Adityatitu01"
+              href="https://github.com/VladyslavNz"
             >
               <FaGithub />
             </a>
