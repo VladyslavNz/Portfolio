@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="pb-7 flex flex-col items-center justify-center">
+    <div id="contact" className="pb-7 flex flex-col items-center justify-center">
       <motion.h2
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}

@@ -26,7 +26,7 @@ const iconVariants = (duration) => ({
 
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div id="skills" className="border-b border-neutral-800 pb-24">
       <motion.h1
       initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}

@@ -4,7 +4,7 @@ import { delay, motion } from "framer-motion";
 
 export const Home = () => {
   return (
-    <div className="border-b pb-12 flex items-center justify-center border-neutral-800">
+    <div id="about" className="border-b pb-12 flex items-center justify-center border-neutral-800">
       <div className="flex justify-center w-full">
         <motion.div 
         initial={{ opacity: 0, scale: 0}}

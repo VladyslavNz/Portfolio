@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-4">
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,22 +53,25 @@ const Projects = () => {
                     {project.title}
                   </a>
                   <motion.a
-                    initial={{ opacity: 0, x: 100 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1}}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0 }}
                     href={project.github_link}
-                    className="cursor-pointer"
+                    className="cursor-pointer w-8 h-8 flex items-center justify-center" // Добавил размеры
                   >
-                    {<FaGithub />}
+                    <FaGithub size={24} /> {/* Явно задаём размер иконки */}
                   </motion.a>
                 </motion.h6>
-                <motion.p 
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.5}}
-                viewport={{ once: true, amount: 0.5 }}
-                className="mb-4 text-neutral-400">{project.description}</motion.p>
+                <motion.p
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  viewport={{ once: true, amount: 0 }}
+                  className="mb-4 text-neutral-400"
+                >
+                  {project.description}
+                </motion.p>
                 <div className="flex flex-wrap justify-center lg:justify-start items-center gap-2 ">
                   {project.technologies.map((tech, index) => {
                     return (
@@ -76,7 +79,7 @@ const Projects = () => {
                         initial={{ opacity: 0, x: 100 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 + index * 0.1 }}
-                        viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0 }}
                         key={index}
                         className="rounded bg-neutral-900 text-indigo-500 px-2 py-1 text-sm font-semibold"
                       >
