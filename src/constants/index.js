@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
+import project6 from "../assets/projects/project6.png";
 
 
 export const profile = {
@@ -57,6 +58,15 @@ export const projects = [
     technologies: ["React", "Vite", "Tailwind", "Framer Motion"],
     github_link: "https://github.com/VladyslavNz/Portfolio",
     live_link: "https://portfolio-vladyslavnzs-projects.vercel.app/",
+  },
+  {
+    title: "TableFlow",
+    image: project6,
+    description:
+      "Restaurant reservation app with real-time table selection using TableFlow and WebSocketServer. Built on React, TailwindCSS, and Next.js for a fast, modern, and responsive booking experience.",
+      technologies: ["React", "Next.js", "Tailwind", "Redux Toolkit", "WebSocketServer", "Express.js", "Prisma"],
+      github_link: "https://github.com/vakulenko10/tableFlow",
+      live_link: "https://table-flow.vercel.app/",
   }
 ];
 
